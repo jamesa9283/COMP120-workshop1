@@ -16,7 +16,7 @@ def loadGrayscale(surface):
             green = pixel.g
             blue = pixel.b
             pixelValue = (red+green+blue)/3
-            surface.set_at((x, y), pixelValue)
+            surface.set_at((x, y), pygame.Color(pixelValue))
             # how to set it to greyscale?!
 
 
